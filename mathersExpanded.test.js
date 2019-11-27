@@ -22,4 +22,10 @@ describe("test multiply positive scenarios", () => {
     expect(n).not.toBeTruthy();
     expect(n).toBeFalsy();
   });
+
+  const carStck = ["BMW", "Mercedes", "Ferrari", "Toyota"];
+
+  test("that the car stock list has ferriari", () => {
+    expect(carStck).toContain("Ferrari");
+  });
 });
