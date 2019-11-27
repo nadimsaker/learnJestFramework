@@ -10,4 +10,8 @@ describe("test multiply positive scenarios", () => {
     data["second"] = 2;
     expect(data).toEqual({ first: 1, second: 2 });
   });
+
+  test("multiply 4*3 should not equal to 11", () => {
+    expect(multiply(4, 3)).not.toBe(11);
+  });
 });
